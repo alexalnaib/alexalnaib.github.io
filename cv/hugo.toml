@@ -1,0 +1,4 @@
+baseURL = 'https://alexalnaib.github.io/'
+languageCode = 'en-us'
+title = 'Alex Alnaib - CV'
+theme = 'hugo-resume'
