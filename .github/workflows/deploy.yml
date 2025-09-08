@@ -12,6 +12,10 @@ permissions:
   pages: write
   id-token: write
 
+defaults:
+  run:
+    working-directory: ./scripts
+
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
@@ -30,7 +34,6 @@ jobs:
           hugo-version: "0.149.1"
       - name: Build site
         run: hugo --minify
-        working-directory: cv
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
