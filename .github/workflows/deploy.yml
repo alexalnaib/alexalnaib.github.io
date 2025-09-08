@@ -30,6 +30,7 @@ jobs:
           hugo-version: "0.149.1"
       - name: Build site
         run: hugo --minify
+        working-directory: cv
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
