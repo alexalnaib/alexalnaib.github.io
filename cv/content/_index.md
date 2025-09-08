@@ -10,6 +10,10 @@ title = "Alex Alnaib"
 
 [GitHub](https://github.com/alexalnaib) • [LinkedIn](https://www.linkedin.com/in/alex-alnaib-106bb1157/) • [Email](mailto:alex.alnaib@gmail.com)
 
+## About
+
+With years of experience working as a DevOps Engineer, Platform Engineer, and Site Reliability Engineer in both corporate and startup companies, working with and within both large and small teams. I pride myself on continuously pushing myself to learn while automating, improving, monitoring, securing, and optimizing cloud infrastructure through best practices.
+
 ---
 
 ## Skills
