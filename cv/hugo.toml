@@ -162,19 +162,19 @@ googleAnalytics = "G-VH7HZ3JWCD"
         [[params.experience.list.items]]
         details = "Designed and built an internal Azure API Management v2 with Application Gateway using Bicep and Terraform."
         [[params.experience.list.items]]
-        details = "Designed and built Azure Virtual WAN to enable region-to-region Virtual Network communication as a managed hub and spoke model (rather than peerings, as this creates a mesh and does not scale well) using Terraform."
+        details = "Designed and built Azure Virtual WAN to enable region-to-region Virtual Network communication as a managed hub and spoke model using Terraform."
         [[params.experience.list.items]]
         details = "Led the implementation of Azure App Service Environments through Terraform, resulting in cost savings and faster deployments due to reduced complexity of networking."
         [[params.experience.list.items]]
         details = "Cut down Azure costs across subscriptions by 15% by migrating applications to use shared App Service Plans and implementing a daily scaling pipeline."
         [[params.experience.list.items]]
-        details = "Improved security by replacing Application Registration client secrets with Federated credentials for authenticating Terraform with Azure, along with Azure DevOps authentication to Azure"
+        details = "Improved security by replacing Application Registration client secrets with Federated credentials for authenticating Terraform and Azure DevOps with Azure"
         [[params.experience.list.items]]
         details = "Improved monitoring and observability for Azure DevOps self-hosted agents by adding an OTEL Collector on the agents and using the data sent to HoneyComb to create dashboards, along with integration with PagerDuty for alerting."
         [[params.experience.list.items]]
-        details = "Improved monitoring and observability by setting up alerting for Key Vault certificates that are near expiry, integrated with Microsoft Teams to receive messages being sent from a Logic App, and Event Grid automated using Terraform."
+        details = "Improved monitoring and observability by setting up alerting for Key Vault certificates that are near expiry. Integrated with Microsoft Teams to receive messages being sent from a Logic App, and Event Grid automated using Terraform."
         [[params.experience.list.items]]
-        details = "Improved monitoring and observability by deploying an OTEL Collector Container App in Azure to scrape Azure Metrics and send them to HoneyComb to be used in dashboards (specifically to monitor shared App Service Plans)."
+        details = "Improved monitoring and observability by deploying an OTEL Collector Container App in Azure to scrape Azure Metrics and send them to HoneyComb to be used in dashboards."
         [[params.experience.list.items]]
         details = "Improved RBAC control by automating the creation and configuration of Azure AD groups using Terraform and Azure DevOps YAML pipelines."
         [[params.experience.list.items]]
@@ -186,15 +186,13 @@ googleAnalytics = "G-VH7HZ3JWCD"
         [[params.experience.list.items]]
         details = "Improved the use of Terraform by creating reusable modules, ensuring scalability, maintainability, and standardized practices."
         [[params.experience.list.items]]
-        details = "Improved deployment speed of developers' pipelines by simplifying the architecture of SQL Servers, along with replacing an out-of-support provider."
+        details = "Improved the deployment speed of developers' pipelines by simplifying the architecture of SQL Servers."
         [[params.experience.list.items]]
         details = "Improved security by replacing username and password logins for SQL Server with Azure Managed Identity and RBAC."
         [[params.experience.list.items]]
         details = "Reduced risk by restricting an email client's ‘send as’ to only send from a specific email address through the use of Azure Managed Identities and Azure PowerShell scripts, applying an application access policy via Exchange Online and Microsoft Graph API commands."
         [[params.experience.list.items]]
-        details = "Reduced costs by automating scaling of Elastic-Pools and App Service Plans using Az CLI scripts along with Azure DevOps YAML pipelines."
-        [[params.experience.list.items]]
-        details = "Improved security by locking down networking to use internal flows through the use of Azure Private Endpoints, Private DNS Zones, and Virtual Network peering and linking."
+        details = "Improved security by locking down networking to be internal, through the use of Azure Private Endpoints, Private DNS Zones, and Virtual Network peering and linking."
         [[params.experience.list.items]]
         details = "Embedded in teams as a dedicated SRE, attending daily standups, helping with issues, and identifying pain points."
         [[params.experience.list.items]]
