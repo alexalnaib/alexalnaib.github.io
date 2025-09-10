@@ -116,9 +116,6 @@ googleAnalytics = "G-VH7HZ3JWCD"
         details = "ServiceNow"
         [[params.skills.list.items]]
         details = "OpsGenie"
-
-        [[params.skills.list]]
-        title = "Project Management Software"
         [[params.skills.list.items]]
         details = "Jira"
 
@@ -126,6 +123,8 @@ googleAnalytics = "G-VH7HZ3JWCD"
         title = "CDN"
         [[params.skills.list.items]]
         details = "Akamai"
+        [[params.skills.list.items]]
+        details = "Cloudflare"
 
 
         [[params.skills.list]]
@@ -150,7 +149,7 @@ googleAnalytics = "G-VH7HZ3JWCD"
 
     [params.summary]
         enable = true
-        text = "With years of experience working as a DevOps Engineer, Platform Engineer, and Site Reliability Engineer in both corporate and startup companies, working with and within both large and small teams. I pride myself on continuously pushing myself to learn while automating, improving, monitoring, securing, and optimizing cloud infrastructure through best practices."
+        text = "Experienced working as a DevOps Engineer, Platform Engineer, and Site Reliability Engineer in both corporate and startup companies, working with and within both large and small teams. I pride myself on continuously pushing myself to learn while automating, maintaining, monitoring, securing, and optimizing cloud infrastructure through best practices."
 
     [params.experience]
         enable = true
@@ -163,11 +162,13 @@ googleAnalytics = "G-VH7HZ3JWCD"
         [[params.experience.list.items]]
         details = "Designed and built an internal Azure API Management v2 with Application Gateway using Bicep and Terraform."
         [[params.experience.list.items]]
-        details = "Cut down Azure costs across subscriptions by 15% by migrating applications to use shared App Service Plans and implementing a pipeline that runs nightly to scale down the App Service Plans, then back up in the morning."
-        [[params.experience.list.items]]
-        details = "Improved security by replacing Application Registration client secrets to use Federated credentials for authenticating Terraform with Azure, along with Azure DevOps authentication to Azure."
-        [[params.experience.list.items]]
         details = "Designed and built Azure Virtual WAN to enable region-to-region Virtual Network communication as a managed hub and spoke model (rather than peerings, as this creates a mesh and does not scale well) using Terraform."
+        [[params.experience.list.items]]
+        details = "Led the implementation of Azure App Service Environments through Terraform, resulting in cost savings and faster deployments due to reduced complexity of networking."
+        [[params.experience.list.items]]
+        details = "Cut down Azure costs across subscriptions by 15% by migrating applications to use shared App Service Plans and implementing a daily scaling pipeline."
+        [[params.experience.list.items]]
+        details = "Improved security by replacing Application Registration client secrets with Federated credentials for authenticating Terraform with Azure, along with Azure DevOps authentication to Azure"
         [[params.experience.list.items]]
         details = "Improved monitoring and observability for Azure DevOps self-hosted agents by adding an OTEL Collector on the agents and using the data sent to HoneyComb to create dashboards, along with integration with PagerDuty for alerting."
         [[params.experience.list.items]]
@@ -184,8 +185,6 @@ googleAnalytics = "G-VH7HZ3JWCD"
         details = "Reduced toil by identifying and automating previously manual processes by using Terraform, Bash scripts, Azure PowerShell scripts, and Azure DevOps YAML pipelines."
         [[params.experience.list.items]]
         details = "Improved the use of Terraform by creating reusable modules, ensuring scalability, maintainability, and standardized practices."
-        [[params.experience.list.items]]
-        details = "Led the implementation of Azure App Service Environments through Terraform, resulting in cost savings and faster deployments due to reduced complexity of networking."
         [[params.experience.list.items]]
         details = "Improved deployment speed of developers' pipelines by simplifying the architecture of SQL Servers, along with replacing an out-of-support provider."
         [[params.experience.list.items]]
@@ -286,4 +285,4 @@ googleAnalytics = "G-VH7HZ3JWCD"
         [[params.projects.list]]
         title = "In-house Automation Framework"
         meta = "IAG"
-        tagline = "Developed and maintained an in-house built automation framework consisting of a wide range of Azure components using Azure PowerShell."
+        tagline = "Developed and maintained an in-house built automation framework consisting of a wide range of Azure resources using Azure PowerShell."
