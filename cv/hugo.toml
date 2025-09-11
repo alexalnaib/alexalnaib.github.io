@@ -160,51 +160,27 @@ googleAnalytics = "G-VH7HZ3JWCD"
         company = "RTGS Global"
         details = "Financial technology start-up company in London, United Kingdom, leading the Site Reliability Engineering team. Building, improving, and maintaining the Azure platform to ensure high-availability and security while supporting the engineering teams."
         [[params.experience.list.items]]
-        details = "Designed and built an internal Azure API Management v2 with Application Gateway using Bicep and Terraform."
+        details = "Designed and implemented large-scale Azure services including API Management with Application Gateway, Virtual WAN hub-and-spoke networking, App Service Environments, and re-architected DNS to reduce complexity and improve scalability."
         [[params.experience.list.items]]
-        details = "Designed and built Azure Virtual WAN to enable region-to-region Virtual Network communication as a managed hub and spoke model using Terraform."
+        details = "Reduced Azure spend by ~15% by consolidating applications onto shared App Service Plans and automating scaling of App Services and Elastic Pools via pipelines and CLI scripts."
         [[params.experience.list.items]]
-        details = "Led the implementation of Azure App Service Environments through Terraform, resulting in cost savings and faster deployments due to reduced complexity of networking."
+        details = "Improved security posture by eliminating secrets through federated credentials and Managed Identity for Terraform, SQL Server, and pipelines."
         [[params.experience.list.items]]
-        details = "Cut down Azure costs across subscriptions by 15% by migrating applications to use shared App Service Plans and implementing a daily scaling pipeline."
+        details = "Hardened networking and access by implementing Private Endpoints, Private DNS Zones, and application access policies via Microsoft Graph and PowerShell."
         [[params.experience.list.items]]
-        details = "Improved security by replacing Application Registration client secrets with Federated credentials for authenticating Terraform and Azure DevOps with Azure"
+        details = "Enhanced observability by deploying OpenTelemetry Collectors across agents and container apps, integrating with Honeycomb dashboards, PagerDuty alerts, and Microsoft Teams notifications."
         [[params.experience.list.items]]
-        details = "Improved monitoring and observability for Azure DevOps self-hosted agents by adding an OTEL Collector on the agents and using the data sent to HoneyComb to create dashboards, along with integration with PagerDuty for alerting."
+        details = "Established proactive monitoring by automating Key Vault certificate expiry alerts and creating a service health monitoring pipeline using Terraform, Logic Apps, and Event Grid."
         [[params.experience.list.items]]
-        details = "Improved monitoring and observability by setting up alerting for Key Vault certificates that are near expiry. Integrated with Microsoft Teams to receive messages being sent from a Logic App, and Event Grid automated using Terraform."
+        details = "Standardized CI/CD practices by introducing YAML pipeline templating, versioning, and reusable Terraform modules, enabling faster and more consistent deployments across teams."
         [[params.experience.list.items]]
-        details = "Improved monitoring and observability by deploying an OTEL Collector Container App in Azure to scrape Azure Metrics and send them to HoneyComb to be used in dashboards."
+        details = "Reduced toil and operational risk by automating certificate management, RBAC group provisioning, and infrastructure tasks using Terraform, Bash, and PowerShell."
         [[params.experience.list.items]]
-        details = "Improved RBAC control by automating the creation and configuration of Azure AD groups using Terraform and Azure DevOps YAML pipelines."
+        details = "Improved developer experience and deployment speed by simplifying SQL Server architecture and replacing deprecated providers."
         [[params.experience.list.items]]
-        details = "Configured metric alerts for App Service Plans along with integration with PagerDuty using Terraform and Azure DevOps YAML pipelines to help proactively respond to resourcing limits."
+        details = "Increased reliability by embedding directly with product teams, attending standups, troubleshooting issues, and enabling first-time production launches through Terraform and pipelines."
         [[params.experience.list.items]]
-        details = "Improved Azure DevOps pipeline deployments by leading the work in standardizing pipelines through YAML templating, versioning, and best practices, resulting in faster and consistent deployments across all domains."
-        [[params.experience.list.items]]
-        details = "Reduced toil by identifying and automating previously manual processes by using Terraform, Bash scripts, Azure PowerShell scripts, and Azure DevOps YAML pipelines."
-        [[params.experience.list.items]]
-        details = "Improved the use of Terraform by creating reusable modules, ensuring scalability, maintainability, and standardized practices."
-        [[params.experience.list.items]]
-        details = "Improved the deployment speed of developers' pipelines by simplifying the architecture of SQL Servers."
-        [[params.experience.list.items]]
-        details = "Improved security by replacing username and password logins for SQL Server with Azure Managed Identity and RBAC."
-        [[params.experience.list.items]]
-        details = "Reduced risk by restricting an email client's ‘send as’ to only send from a specific email address through the use of Azure Managed Identities and Azure PowerShell scripts, applying an application access policy via Exchange Online and Microsoft Graph API commands."
-        [[params.experience.list.items]]
-        details = "Improved security by locking down networking to be internal, through the use of Azure Private Endpoints, Private DNS Zones, and Virtual Network peering and linking."
-        [[params.experience.list.items]]
-        details = "Embedded in teams as a dedicated SRE, attending daily standups, helping with issues, and identifying pain points."
-        [[params.experience.list.items]]
-        details = "Implemented Renovate to automate upgrading Terraform providers."
-        [[params.experience.list.items]]
-        details = "Deployed and supported a first-time launch of Production systems through pipelines and Terraform."
-        [[params.experience.list.items]]
-        details = "Automated the creation and importing of certificates to Azure Key Vault, using Acme along with Bash scripts and Azure DevOps YAML pipelines."
-        [[params.experience.list.items]]
-        details = "Re-architected Private DNS Zones to use a Hub and Spoke model to reduce networking complexity."
-        [[params.experience.list.items]]
-        details = "Improved monitoring of services by creating a service health module and pipeline, using Terraform to create Action Groups, Activity log alert rules, and a Logic App to post a message to a Microsoft Teams channel."
+        details = "Implemented Renovate to automate Terraform provider upgrades, ensuring maintainability and reducing technical debt."
 
         [[params.experience.list]]
         title = "Platform Engineer"
