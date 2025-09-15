@@ -1,0 +1,262 @@
+baseURL = 'https://alexalnaib.github.io/'
+languageCode = 'en'
+title = 'Alex Alnaib - CV'
+theme = 'hugo-devresume-theme'
+googleAnalytics = "G-VH7HZ3JWCD"
+
+[params]
+    author = "CowboySmall"
+    description = "DevResume - Bootstrap 4 Resume/CV Template For Software Developers"
+
+    primaryColor = "#54B689"
+    textPrimaryColor = "#292929"
+
+    [params.profile]
+        enable = true
+        name = "Alex Alnaib"
+        tagline = "DevOps | Platform | Site Reliability Engineer"
+        avatar = "profile.jpg"
+
+    [params.contact]
+        enable = true
+        location = "Auckland, New Zealand"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:#"
+        text = "+64210711002"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:#"
+        text = "alex.alnaib@gmail.com"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "https://www.linkedin.com/in/alex-alnaib-106bb1157/)"
+        text = "LinkedIn"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Cloud"
+        [[params.skills.list.items]]
+        details = "Azure"
+
+        [[params.skills.list]]
+        title = "IaC"
+        [[params.skills.list.items]]
+        details = "Terraform"
+        [[params.skills.list.items]]
+        details = "Ansible"
+        [[params.skills.list.items]]
+        details = "ARM"
+        [[params.skills.list.items]]
+        details = "Bicep"
+
+        [[params.skills.list]]
+        title = "Scripting"
+        [[params.skills.list.items]]
+        details = "PowerShell"
+        [[params.skills.list.items]]
+        details = "Bash"
+
+        [[params.skills.list]]
+        title = "Programming Languages"
+        [[params.skills.list.items]]
+        details = "C#"
+        [[params.skills.list.items]]
+        details = "Go"
+        [[params.skills.list.items]]
+        details = "TypeScript"
+
+        [[params.skills.list]]
+        title = "CI/CD"
+        [[params.skills.list.items]]
+        details = "Azure DevOps YAML"
+        [[params.skills.list.items]]
+        details = "Jenkins"
+        [[params.skills.list.items]]
+        details = "GitHub Actions"
+
+        [[params.skills.list]]
+        title = "OS"
+        [[params.skills.list.items]]
+        details = "Windows"
+        [[params.skills.list.items]]
+        details = "Linux"
+
+        [[params.skills.list]]
+        title = "Containerization"
+        [[params.skills.list.items]]
+        details = "Kubernetes"
+        [[params.skills.list.items]]
+        details = "Helm"
+
+        [[params.skills.list]]
+        title = "Monitoring"
+        [[params.skills.list.items]]
+        details = "OpenTelemetry"
+        [[params.skills.list.items]]
+        details = "SumoLogic"
+        [[params.skills.list.items]]
+        details = "Azure Monitor"
+        [[params.skills.list.items]]
+        details = "HoneyComb"
+
+        [[params.skills.list]]
+        title = "Security"
+        [[params.skills.list.items]]
+        details = "Entra ID"
+        [[params.skills.list.items]]
+        details = "RBAC"
+
+        [[params.skills.list]]
+        title = "ITSM"
+        [[params.skills.list.items]]
+        details = "ServiceNow"
+        [[params.skills.list.items]]
+        details = "OpsGenie"
+        [[params.skills.list.items]]
+        details = "Jira"
+
+        [[params.skills.list]]
+        title = "CDN"
+        [[params.skills.list.items]]
+        details = "Akamai"
+        [[params.skills.list.items]]
+        details = "Cloudflare"
+
+
+        [[params.skills.list]]
+        title = "Professional"
+        [[params.skills.list.items]]
+        details = "Collaboration with teams"
+        [[params.skills.list.items]]
+        details = "Educating"
+        [[params.skills.list.items]]
+        details = "Eagerness to learn"
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "Bachelor of Engineering Technology in Computer and Mobile Systems Engineering"
+        university = "AUT University"
+        dates = "2014 - 2018"
+        [[params.education.list]]
+        university = "Rosmini College"
+        dates = "2008 - 2014"
+
+    [params.summary]
+        enable = true
+        text = "Experienced working as a DevOps Engineer, Platform Engineer, and Site Reliability Engineer in both corporate and startup companies, working with and within both large and small teams. I pride myself on continuously pushing myself to learn while automating, maintaining, monitoring, securing, and optimizing cloud infrastructure through best practices."
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Site Reliability Engineer"
+        dates = "Oct 2023 - Present"
+        company = "RTGS Global"
+        details = "Financial technology start-up company in London, United Kingdom, leading the Site Reliability Engineering team. Building, improving, and maintaining the Azure platform to ensure high-availability and security while supporting the engineering teams."
+        [[params.experience.list.items]]
+        details = "Designed and implemented large-scale Azure services including API Management with Application Gateway, Virtual WAN hub-and-spoke networking, App Service Environments, and re-architected DNS to reduce complexity and improve scalability."
+        [[params.experience.list.items]]
+        details = "Reduced Azure spend by ~15% by consolidating applications onto shared App Service Plans and automating scaling of App Services and Elastic Pools via pipelines and CLI scripts."
+        [[params.experience.list.items]]
+        details = "Improved security posture by eliminating secrets through federated credentials and Managed Identity for Terraform, SQL Server, and pipelines."
+        [[params.experience.list.items]]
+        details = "Hardened networking and access by implementing Private Endpoints, Private DNS Zones, and application access policies via Microsoft Graph and PowerShell."
+        [[params.experience.list.items]]
+        details = "Enhanced observability by deploying OpenTelemetry Collectors across agents and container apps, integrating with Honeycomb dashboards, PagerDuty alerts, and Microsoft Teams notifications."
+        [[params.experience.list.items]]
+        details = "Established proactive monitoring by automating Key Vault certificate expiry alerts and creating a service health monitoring pipeline using Terraform, Logic Apps, and Event Grid."
+        [[params.experience.list.items]]
+        details = "Standardized CI/CD practices by introducing YAML pipeline templating, versioning, and reusable Terraform modules, enabling faster and more consistent deployments across teams."
+        [[params.experience.list.items]]
+        details = "Reduced toil and operational risk by automating certificate management, RBAC group provisioning, and infrastructure tasks using Terraform, Bash, and PowerShell."
+        [[params.experience.list.items]]
+        details = "Improved developer experience and deployment speed by simplifying SQL Server architecture and replacing deprecated providers."
+        [[params.experience.list.items]]
+        details = "Increased reliability by embedding directly with product teams, attending standups, troubleshooting issues, and enabling first-time production launches through Terraform and pipelines."
+        [[params.experience.list.items]]
+        details = "Implemented Renovate to automate Terraform provider upgrades, ensuring maintainability and reducing technical debt."
+
+        [[params.experience.list]]
+        title = "Platform Engineer"
+        dates = "Sep 2022 - Aug 2023"
+        company = "Tower Insurance"
+        details = "Insurance company in Auckland, New Zealand, part of the Platform Engineering team. Looking after the Azure platform."
+        [[params.experience.list.items]]
+        details = "Improved deployment efficiency by developing and optimizing Terraform modules and Ansible playbooks for Azure resource deployment and configuration."
+        [[params.experience.list.items]]
+        details = "Identified and automated manual processes using Jenkins, Azure PowerShell, and bash scripts, increasing productivity and reducing errors."
+        [[params.experience.list.items]]
+        details = "Enhanced monitoring and observability by integrating systems with SumoLogic, utilizing Azure EventHubs, Key Vaults, Storage Accounts, and Network Security Groups."
+        [[params.experience.list.items]]
+        details = "Planned and automated an OS upgrade across servers, going from CentOS to RedHat, through Terraform, and Ansible."
+        [[params.experience.list.items]]
+        details = "Upgraded Redis and SumoLogic agents in Azure Kubernetes Services via Helm charts."
+        [[params.experience.list.items]]
+        details = "Took part in a weekly on-call roster."
+
+        [[params.experience.list]]
+        title = "DevOps Engineer"
+        dates = "May 2018 - Aug 2022"
+        company = "IAG"
+        details = "Insurance company in Auckland, New Zealand, part of the DevOps team. Looking after and implementing DevOps best practices for the Azure platform."
+        [[params.experience.list.items]]
+        details = "Improved the speed of daily Azure environment spin-ups through CI/CD."
+        [[params.experience.list.items]]
+        details = "Contributed to mitigating risk by developing automation for Event Hub diagnostics."
+        [[params.experience.list.items]]
+        details = "Contributed to converting classic Azure DevOps pipelines into YAML pipelines."
+        [[params.experience.list.items]]
+        details = "Actively improving and maintaining cloud infrastructure in Azure through CI/CD using an in-house automation framework written in PowerShell."
+        [[params.experience.list.items]]
+        details = "Contributed to improving load balancing of web applications by configuring ARM templates, IaC files, CI/CD pipelines, Akamai properties, and certificates."
+        [[params.experience.list.items]]
+        details = "Helped up-skill new DevOps engineers who joined the team, as well as developers from other teams."
+        [[params.experience.list.items]]
+        details = "Worked closely with teams, helping maintain projects and resources in Azure and Azure DevOps."
+        [[params.experience.list.items]]
+        details = "Contributed to the documentation of processes and the use of the in-house automation framework."
+        [[params.experience.list.items]]
+        details = "Contributed to Azure cost savings by maintaining automated nightly resource removal and daily resource spin-up."
+        [[params.experience.list.items]]
+        details = "Automated CI/CD of Azure API Management developer portal."
+        [[params.experience.list.items]]
+        details = "Contributed to CI/CD of self-hosted agents in Azure."
+        [[params.experience.list.items]]
+        details = "Created and maintained CI/CD pipelines in Azure DevOps."
+        [[params.experience.list.items]]
+        details = "Contributed to the in-house automation framework writing Azure PowerShell scripts."
+        [[params.experience.list.items]]
+        details = "Contributed to Pester unit tests using PowerShell."
+        [[params.experience.list.items]]
+        details = "Helped teams maintain Infrastructure as Code."
+        [[params.experience.list.items]]
+        details = "Produced Azure cost reports using Power BI."
+
+    [params.projects]
+        enable = true
+
+        [[params.projects.list]]
+        title = "Linux OS Upgrade"
+        meta = "Tower Insurance"
+        tagline = "Worked on upgrading servers from CentOS 7.9 to RedHat 8.7, including updating Terraform modules, updating Ansible playbooks, implementing Azure App Gateway, and applying image hardening."
+
+        [[params.projects.list]]
+        title = "Reducing Toil"
+        meta = "RTGS Global"
+        tagline = "Designed and drove the work behind improving the ability to stand up infrastructure by working closely with teams and standardizing the team's pipelines and deployment strategy."
+
+        [[params.projects.list]]
+        title = "Azure Cost Savings"
+        meta = "IAG"
+        tagline = "Developed and maintained an automated Azure cost-saving pattern across various Azure resources using Azure PowerShell and DevOps CI/CD."
+
+        [[params.projects.list]]
+        title = "In-house Automation Framework"
+        meta = "IAG"
+        tagline = "Developed and maintained an in-house built automation framework consisting of a wide range of Azure resources using Azure PowerShell."

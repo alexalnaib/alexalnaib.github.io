@@ -1,0 +1,3 @@
+[submodule "cv/themes/hugo-devresume-theme"]
+	path = cv/themes/hugo-devresume-theme
+	url = https://github.com/alexalnaib/hugo-devresume-theme.git
