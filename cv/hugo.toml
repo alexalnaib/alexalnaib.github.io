@@ -47,8 +47,6 @@ googleAnalytics = "G-VH7HZ3JWCD"
         [[params.skills.list.items]]
         details = "Terraform"
         [[params.skills.list.items]]
-        details = "Ansible"
-        [[params.skills.list.items]]
         details = "ARM"
         [[params.skills.list.items]]
         details = "Bicep"
