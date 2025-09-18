@@ -47,11 +47,14 @@ googleAnalytics = "G-VH7HZ3JWCD"
         [[params.skills.list.items]]
         details = "Terraform"
         [[params.skills.list.items]]
-        details = "Ansible"
-        [[params.skills.list.items]]
         details = "ARM"
         [[params.skills.list.items]]
         details = "Bicep"
+
+        [[params.skills.list]]
+        title = "Configuration Management"
+        [[params.skills.list.items]]
+        details = "Ansible"
 
         [[params.skills.list]]
         title = "Scripting"
@@ -156,7 +159,7 @@ googleAnalytics = "G-VH7HZ3JWCD"
 
         [[params.experience.list]]
         title = "Site Reliability Engineer"
-        dates = "Oct 2023 - Present"
+        dates = "Oct 2023 - Sep 2025"
         company = "RTGS Global"
         details = "Financial technology start-up company in London, United Kingdom, leading the Site Reliability Engineering team. Building, improving, and maintaining the Azure platform to ensure high-availability and security while supporting the engineering teams."
         [[params.experience.list.items]]
