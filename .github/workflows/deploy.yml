@@ -42,8 +42,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Install Puppeteer
-        run: npm install -g puppeteer
       - name: Generate PDF from Hugo output
         run: |
           npx --yes puppeteer@22.15.0 node -e "
