@@ -53,9 +53,9 @@ jobs:
               args: ['--no-sandbox', '--disable-setuid-sandbox']
             });
             const page = await browser.newPage();
-            await page.goto(`file://${process.cwd()}/public/index.html`, {waitUntil: 'networkidle0'});
+            await page.goto('file://' + process.cwd() + '/cv/public/index.html', {waitUntil: 'networkidle0'});
             await page.pdf({
-              path: "public/resume.pdf",
+              path: 'cv/public/resume.pdf',
               format: "A4",
               printBackground: true,
               margin: { top: '0.5in', bottom: '0.5in', left: '0.5in', right: '0.5in' }
