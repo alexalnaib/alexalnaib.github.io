@@ -46,24 +46,25 @@ jobs:
         run: npm install -g puppeteer
       - name: Generate PDF from Hugo output
         run: |
-          node <<'EOF'
-          const puppeteer = require("puppeteer");
+          npx --yes puppeteer@22.15.0 node -e "
+          const puppeteer = require('puppeteer');
           (async () => {
             const browser = await puppeteer.launch({
               headless: true,
-              args: ['--no-sandbox', '--disable-setuid-sandbox']
+              args: ['--no-sandbox', '--disable-setuid-sandbox'],
+              userDataDir: '/tmp/puppeteer'
             });
             const page = await browser.newPage();
-            await page.goto(`file://${process.cwd()}/public/index.html`, {waitUntil: 'networkidle0'});
+            await page.goto('file://' + process.cwd() + '/public/index.html', {waitUntil: 'networkidle0'});
             await page.pdf({
-              path: "public/cv.pdf",
-              format: "A4",
+              path: 'public/resume.pdf',
+              format: 'A4',
               printBackground: true,
               margin: { top: '0.5in', bottom: '0.5in', left: '0.5in', right: '0.5in' }
             });
             await browser.close();
           })();
-          EOF
+          "
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
