@@ -15,7 +15,6 @@ permissions:
 defaults:
   run:
     shell: bash
-    working-directory: ./scripts
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -42,27 +41,28 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Install Puppeteer
+        run: npm install puppeteer
       - name: Generate PDF from Hugo output
         run: |
-          npx --yes puppeteer@22.15.0 node -e "
-          const puppeteer = require('puppeteer');
+          node <<'EOF'
+          const puppeteer = require("puppeteer");
           (async () => {
             const browser = await puppeteer.launch({
               headless: true,
-              args: ['--no-sandbox', '--disable-setuid-sandbox'],
-              userDataDir: '/tmp/puppeteer'
+              args: ['--no-sandbox', '--disable-setuid-sandbox']
             });
             const page = await browser.newPage();
-            await page.goto('file://' + process.cwd() + '/public/index.html', {waitUntil: 'networkidle0'});
+            await page.goto(`file://${process.cwd()}/public/index.html`, {waitUntil: 'networkidle0'});
             await page.pdf({
-              path: 'public/resume.pdf',
-              format: 'A4',
+              path: "public/resume.pdf",
+              format: "A4",
               printBackground: true,
               margin: { top: '0.5in', bottom: '0.5in', left: '0.5in', right: '0.5in' }
             });
             await browser.close();
           })();
-          "
+          EOF
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
