@@ -58,7 +58,7 @@ jobs:
             const page = await browser.newPage();
             await page.goto('http://localhost:8080', {waitUntil: 'networkidle0'});
             await page.pdf({
-              path: 'public/resume.pdf',
+              path: 'cv/public/cv.pdf',
               format: 'A4',
               printBackground: true,
               margin: { top: '0.5in', bottom: '0.5in', left: '0.5in', right: '0.5in' }
